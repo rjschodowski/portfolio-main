@@ -1,0 +1,66 @@
+.heading {
+  font-size: 3.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 3.75rem;
+  animation: pulse 2.5s;
+}
+
+@keyframes pulse {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #666666;
+  }
+}
+
+.content-image {
+  margin-bottom: 4rem;
+}
+
+.link {
+  color: #3f51b6;
+  font-weight: 700;
+}
+
+.link:hover {
+  font-size: 105%;
+  text-decoration: underline 2px;
+  text-underline-position: under;
+  transition-property: font-size;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+@media only screen and (min-width: 640px) {
+  .heading {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .content-container {
+    display: flex;
+  }
+
+  .heading {
+    text-align: end;
+  }
+
+  .content-text {
+    flex: 1;
+  }
+
+  .content-image {
+    margin-right: 4rem;
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .content-image {
+    margin-right: 8rem;
+  }
+}

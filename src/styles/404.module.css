@@ -1,0 +1,15 @@
+.link {
+  color: #3f51b6;
+  text-decoration: underline 2px;
+  text-underline-position: under;
+  font-weight: 700;
+}
+
+.link:hover {
+  font-size: 105%;
+  text-decoration: underline 2px;
+  text-underline-position: under;
+  transition-property: font-size;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}

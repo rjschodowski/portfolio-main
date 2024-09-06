@@ -1,0 +1,65 @@
+.heading {
+  font-size: 3.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 3.75rem;
+  animation: pulse 2.5s;
+}
+
+@keyframes pulse {
+  0% {
+    color: #ffffff;
+  }
+  100% {
+    color: #666666;
+  }
+}
+
+.link {
+  color: #3f51b6;
+  font-weight: 700;
+}
+
+.link:hover {
+  font-size: 105%;
+  text-decoration: underline 2px;
+  text-underline-position: under;
+  transition-property: font-size;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  align-self: flex-end;
+  margin-top: 5rem;
+}
+
+.arrow {
+  color: #3f51b6;
+}
+
+@media only screen and (min-width: 640px) {
+  .introduction-section {
+    flex: 1 1;
+  }
+
+  .heading {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .heading-description {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .body-container {
+    flex-direction: row;
+  }
+}
